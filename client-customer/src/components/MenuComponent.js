@@ -14,16 +14,16 @@ class Menu extends Component {
   render() {
     const cates = this.state.categories.map((item) => {
       return (
-        <li key={item._id} className="menu"><Link to={'/product/category/' + item._id}>{item.name}</Link></li>
+      <Link li key={item._id} className='button' to={'/product/category/' + item._id}>{item.name}</Link>
       );
     });
     return (
       <div className="border-bottom">
         <div className="float-left">
-          <ul className="menu">
-            <li className="menu"><a href="/#">Home</a></li>
+          <div className="btn-group">
+           <a className='button' href="/#">Home</a>
             {cates}
-          </ul>
+          </div>
         </div>
         <div className="float-right">
         <form className="search">

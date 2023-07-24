@@ -18,31 +18,29 @@ class Signup extends Component {
         <h2 className="text-center">SIGN-UP</h2>
         <form>
           <table className="align-center">
-            <tbody>
+            <tbody className='container'>
               <tr>
-                <td>Username</td>
-                <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
+                <label><b>Username</b></label>
+                <input type="text"  placeholder="Enter Username" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} />
               </tr>
               <tr>
-                <td>Password</td>
-                <td><input type="password" value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} /></td>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Username" value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} />
               </tr>
               <tr>
-                <td>Name</td>
-                <td><input type="text" value={this.state.txtName} onChange={(e) => { this.setState({ txtName: e.target.value }) }} /></td>
+                <label><b> Name</b></label>
+                <input type="text" placeholder="Enter Name" value={this.state.txtName} onChange={(e) => { this.setState({ txtName: e.target.value }) }} />
               </tr>
               <tr>
-                <td>Phone</td>
-                <td><input type="tel" value={this.state.txtPhone} onChange={(e) => { this.setState({ txtPhone: e.target.value }) }} /></td>
+                <label><b> Phone  </b></label>
+                <input type="tel" placeholder="Enter Phone" value={this.state.txtPhone} onChange={(e) => { this.setState({ txtPhone: e.target.value }) }} />
+              
+                <label><b> Email  </b></label>
+                <input type="email" placeholder="Enter Email" value={this.state.txtEmail} onChange={(e) => { this.setState({ txtEmail: e.target.value }) }} />
               </tr>
-              <tr>
-                <td>Email</td>
-                <td><input type="email" value={this.state.txtEmail} onChange={(e) => { this.setState({ txtEmail: e.target.value }) }} /></td>
-              </tr>
-              <tr>
-                <td></td>
+              
                 <td><input type="submit" value="SIGN-UP" onClick={(e) => this.btnSignupClick(e)} /></td>
-              </tr>
+              
             </tbody>
           </table>
         </form>

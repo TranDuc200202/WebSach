@@ -18,18 +18,16 @@ class Login extends Component {
         <h2 className="text-center">CUSTOMER LOGIN</h2>
         <form>
           <table className="align-center">
-            <tbody>
+            <tbody className='container'>
               <tr>
-                <td>Username</td>
-                <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} />
               </tr>
               <tr>
-                <td>Password</td>
-                <td><input type="password" value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} /></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><input type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} />
+              
+                <input type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /> 
               </tr>
             </tbody>
           </table>

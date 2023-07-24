@@ -1,3 +1,64 @@
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body{
+  background: #eaa33b;
+}
 .App {
   text-align: center;
 }
@@ -14,14 +75,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2cb916;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: yel;
 }
 
 .App-link {
@@ -36,28 +97,54 @@
     transform: rotate(360deg);
   }
 }
-/* styles.css */
+
 .body-customer {
-  width: 1150px;
+  width: 1300px;
   height: fit-content;
   margin: 0px auto;
+  background-color: white;
+}
+.btn-group .button {
+  background-color: #4CAF50; 
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
 }
 .body-admin {
   width: fit-content;
   height: fit-content;
   margin: 0px auto;
+  background-color: #b7b7b8;
 }
+
 div.inline {
   display: inline-block;
 }
+
 figure.caption-right {
   display: flex;
   align-items: center;
 }
+
 .align-center {
   width: fit-content;
   margin: 0px auto;
+  text-align: center;
 }
+
 .align-valign-center {
   position: absolute;
   top: 50%;
@@ -66,61 +153,98 @@ figure.caption-right {
   padding: 0px 20px 20px 20px;
   border: 1px solid black;
 }
+
 .text-center {
   text-align: center;
 }
+
+.container {
+  padding: 16px;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
 span.link {
   cursor: pointer;
   color: blue;
   text-decoration: underline;
 }
+
 /* menu.css */
+
 div.border-bottom {
+  margin: 30px;
   border-bottom: 1px solid black;
   padding: 10px 0px 10px 0px;
 }
+
 div.float-left {
   float: left;
 }
+
 div.float-right {
   float: right;
 }
+
 div.float-clear {
   clear: both;
 }
+
 ul.menu {
   margin: 0px;
   padding: 0px;
 }
+
 li.menu {
+  color: #008000;
   display: inline;
-  margin-right: 20px;
+  margin-right: 50px;
   text-transform: uppercase;
 }
+
 form.search {
-  margin: 0px;
+  margin: 10px;
 }
+
 input.keyword {
-  width: 110px;
+  width: 200px;
 }
+
 /* datatable.css */
+
 .datatable {
   text-align: center;
   border-collapse: collapse;
 }
+
 /* header */
+
 tr:first-child.datatable {
-  background-color: #ffcc00;
+  background-color: wheat;
 }
+
 /* even rows, except header */
+
 tr:not(:first-child):nth-child(even).datatable {
-  background-color: #f5f5f5;
+  background-color: #797a58;
 }
+
 /* odd rows, except header */
+
 tr:not(:first-child):nth-child(odd).datatable {
   background-color: #ffeeaa;
 }
+
 /* except header */
+
 tr:not(:first-child):hover.datatable {
   background-color: #dcfcfc;
   cursor: pointer;

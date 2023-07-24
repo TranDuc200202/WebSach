@@ -1,3 +1,7 @@
+body{
+  background: wheat;
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +15,18 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.btn-group .button {
+  background-color: #9eaf4c; 
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .App-header {
