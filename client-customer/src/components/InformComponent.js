@@ -20,7 +20,6 @@ class Inform extends Component {
       </div>
         <div className="float-clear" />
       </div>
-  
       
     );
   }
