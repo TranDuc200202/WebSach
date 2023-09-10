@@ -15,10 +15,13 @@ class Inform extends Component {
         }
       </div>
       <div className="float-right">
-      <Link to='/mycart'>My cart</Link> have <b>{this.context.mycart.length}</b> items 
+       <Link to='/mycart'>My cart</Link> have <b>{this.context.mycart.length}</b> items  have <b>{this.context.mycart.length}</b> items 
+       <Link to='/mycart'>My cart</Link>
       </div>
         <div className="float-clear" />
       </div>
+  
+      
     );
   }
   // event-handlers
